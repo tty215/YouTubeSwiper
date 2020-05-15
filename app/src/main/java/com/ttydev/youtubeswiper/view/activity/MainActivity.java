@@ -1,8 +1,10 @@
-package com.ttydev.youtubeswiper;
+package com.ttydev.youtubeswiper.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.ttydev.youtubeswiper.R;
 
 public class MainActivity extends AppCompatActivity {
 
