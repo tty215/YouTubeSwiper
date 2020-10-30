@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.view.ChannelListAdapter">
+
+    <ImageView
+        android:id="@+id/channel_thumbnail"
+        android:layout_width="@dimen/channel_list_height"
+        android:layout_height="@dimen/channel_list_height"
+        android:padding="2dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:layout_height="@dimen/channel_list_height"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/channel_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#222"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="20dp"
+            android:text="東海オンエア"/>
+        <TextView
+            android:id="@+id/channel_description"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#666"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="どうも、東海オンエアです。 ぜひチャンネル登録お願いします！"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/channel_favorite_button"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/channel_list_height"
+        android:src="@drawable/ic_star_off"
+        android:background="#fff" />
+
+</LinearLayout>
